@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+/* Highlight background color and border for the About Me section */
+#about {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+/* Add a subtle hover effect to bring attention */
+#about:hover {
+    background-color: #e3f2fd; /* Slightly lighter blue */
+    transform: scale(1.00); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for the section to appear smoothly when page loads */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in place */
+    }
+}
+
+/* Apply the animation to the About Me section */
+#about {
+    animation: fadeInSlideUp 1s ease-in-out;
+}
+
+/* Style the heading to make it more prominent */
+#about h2 {
+    color: #4caf50; /* Green color for heading */
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraph text */
+#about p {
+    font-size: 18px;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+</style>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Kamal Goparaju! "As a dedicated Data Analyst, I am deeply passionate about uncovering insights from data and transforming raw information into actionable strategies that drive business success. With a strong foundation in data modeling, statistical analysis, and data visualization, I thrive on solving complex problems and making data-driven decisions. I love the process of analyzing trends, interpreting patterns, and using tools like Python, SQL, and Power BI to help organizations make informed choices. My goal is to leverage data to not only inform decisions but also to inspire innovation and fuel growth."</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>“Insightful Fraud Analysis in Insurance Claims through Machine Learning”</h3>
+            <p>Developed a website for an Insurance claims fraud detection, to check the vehicle insurance claims is 
+                fraud or not fraud.</p>
+            <a href="https://kamalgoparaju.pythonanywhere.com/" target="_blank">Visit my Project</a>
+        </div>
+        <div class="project">
+            <h3>Generate Automatic Certificate</h3>
+            <p>Developed a system to generate certificates automatically.
+                Allow input of intern details and generate personalized certificates.</p>
+            <a href="#">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>FastAPI</li>
+            <!-- Add more skills -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kamal's Portfolio</p>
+    </footer>
+</body>
+</html>

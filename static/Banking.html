@@ -1,0 +1,60 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Application</h1>
+        <div id="balance-display">
+            <h2>Balance: $<span id="balance">0.00</span></h2>
+        </div>
+
+        <div id="controls">
+            <button onclick="getBalance()">Show Balance</button>
+            <button onclick="openDeposit()">Deposit</button>
+            <button onclick="openWithdraw()">Withdraw</button>
+        </div>
+
+        <div id="input-area" style="display: none;">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="submitAmount()">Submit</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Certificate</title>
+</head>
+<body>
+    <h1>Generate Internship Certificate</h1>
+    <form action="/generate_certificate/" method="post">
+        <label for="name">Intern Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="internship_duration">Internship Duration:</label><br>
+        <input type="text" id="internship_duration" name="internship_duration" required><br><br>
+
+        <label for="role">Role:</label><br>
+        <input type="text" id="role" name="role" required><br><br>
+
+        <label for="completion_date">Completion Date:</label><br>
+        <input type="date" id="completion_date" name="completion_date" required><br><br>
+
+        <button type="submit">Generate Certificate</button>
+    </form>
+</body>
+</html>
